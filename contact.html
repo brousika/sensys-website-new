@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact SenSys Aéro</title>
+  <meta name="description" content="Parlez-nous de votre défi composite. Courriel : service@bluzetech.com - région de Québec.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="SenSys Aéro — accueil">
+        <img src="Icon.png" alt="SenSys Aéro" class="brand__logo">
+        <span><span class="brand__name">SenSys<b> Aéro</b></span><span class="brand__tag" style="display:block;">LEADER EN COMPOSITES</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" data-nav-toggle>
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <nav class="nav" data-nav>
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a class="btn btn--sm" href="#form">Parlez-nous de votre défi</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero weave glow-wrap">
+    <span class="glow"></span>
+    <div class="container">
+      <div class="eyebrow"><span>CONTACT</span></div>
+      <h1>Parlez-nous de votre défi composite.</h1>
+      <p>Une incertitude sur l'utilisation du composite ? Nous pouvons vous aider de la fabrication à la réparation.</p>
+    </div>
+  </section>
+
+  <section class="section-light">
+    <div class="container contact-grid">
+      <!-- Coordonnées -->
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div class="info-card">
+          <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#1E40AF" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="#1E40AF" stroke-width="1.6"/></svg></span>
+          <div><div class="k">Courriel</div><a class="v" href="mailto:service@bluzetech.com">service@bluzetech.com</a><div class="d">Réponse sous 1 à 2 jours ouvrables.</div></div>
+        </div>
+        <div class="info-card">
+          <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z" stroke="#1E40AF" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.4" stroke="#1E40AF" stroke-width="1.6"/></svg></span>
+          <div><div class="k">Localisation</div><div class="v">Région de Québec, QC</div><div class="d">Canada · Fuseau horaire de l'Est (ET)</div></div>
+        </div>
+        <div class="info-card">
+          <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16v13H4zM4 7l8 6 8-6" stroke="#1E40AF" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+          <div><div class="k">Marque sœur</div><a class="v" href="https://bluzetech.com" target="_blank" rel="noopener">Bluzetech ↗</a><div class="d">Réparation & fabrication de pièces composites.</div></div>
+        </div>
+      </div>
+
+      <!-- Formulaire acheminé par courriel via Web3Forms (voir README). -->
+      <form class="card" id="form" method="POST" action="https://api.web3forms.com/submit" data-contact-form>
+        <h2 style="font-size:24px;margin-bottom:8px;">Écrivez-nous</h2>
+        <input type="hidden" name="access_key" value="c72b4f75-f163-4b32-a7fa-ae4b1b05810e">
+        <input type="hidden" name="subject" value="Nouveau message — SenSys Aéro">
+        <input type="hidden" name="from_name" value="Formulaire SenSys Aéro">
+        <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off">
+        <div class="field-row">
+          <div class="field"><label for="nom">Nom</label><input id="nom" name="nom" type="text" placeholder="Votre nom" autocomplete="name" required></div>
+          <div class="field"><label for="courriel">Courriel</label><input id="courriel" name="courriel" type="email" placeholder="vous@organisation.com" autocomplete="email" required></div>
+        </div>
+        <div class="field"><label for="org">Organisation</label><input id="org" name="organisation" type="text" placeholder="Nom de votre organisation" autocomplete="organization"></div>
+        <div class="field">
+          <label for="defi">Décrivez l'incertitude ou le défi que vous rencontrez avec les composites</label>
+          <textarea id="defi" name="message" rows="6" placeholder="Parlez-nous de votre structure, de votre application et de ce qui vous préoccupe…" required></textarea>
+        </div>
+        <button class="btn btn--on-light btn--block" type="submit" style="margin-top:24px;">Envoyer mon message</button>
+        <p class="form-msg" data-form-msg role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="index.html"><img src="Icon.png" alt="SenSys Aéro" class="brand__logo"><span class="brand__name">SenSys<b> Aéro</b></span></a>
+          <p>Surveillance et qualification structurelle pour les matériaux composites. Québec, Canada.</p>
+        </div>
+        <div class="footer-col"><h4>NAVIGATION</h4><a href="index.html">Accueil</a><a href="apropos.html">À propos</a></div>
+        <div class="footer-col"><h4>CONTACT</h4><a href="mailto:info@sensysaero.com">info@sensysaero.com</a><span style="font-size:14px;color:var(--text-mut);">Région de Québec, QC</span></div>
+        <div class="footer-col"><h4>FAMILLE DE MARQUE</h4><a href="https://bluzetech.com" target="_blank" rel="noopener">Bluzetech ↗</a><p class="lang" style="margin-top:8px;"><b>FR</b> <span class="off">/ EN (bientôt)</span></p></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 SenSys Aéro. Tous droits réservés.</span>
+        <span class="footer-legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SenSys Aéro — Surveillance et qualification structurelle des composites</title>
+  <meta name="description" content="SenSys Aéro réduit les incertitudes qui freinent l'adoption des composites. Parlez-nous de votre défi composite.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ======================= HEADER ======================= -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="SenSys Aéro — accueil">
+        <img src="Icon.png" alt="SenSys Aéro" class="brand__logo">
+        <span>
+          <span class="brand__name">SenSys<b> Aéro</b></span>
+          <span class="brand__tag" style="display:block;">LEADER EN COMPOSITES</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" data-nav-toggle>
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="#CBD5E1" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <nav class="nav" data-nav>
+        <a href="index.html" aria-current="page">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn--sm" href="#contact">Parlez-nous de votre défi</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================= HERO ======================= -->
+  <section class="hero glow-wrap">
+    <span class="glow"></span>
+    <div class="container hero__grid">
+      <div class="eyebrow"></span><span>DE LA FABRICATION À LA RÉPARATION</span></div>
+      <h1>Réduire les incertitudes qui freinent l'adoption des composites.</h1>
+      <p class="hero__sub">Pour que l'industrie en exploite le plein potentiel : <b>plus léger, plus durable, moins de gaspillage.</b></p>
+      <div class="hero__cta">
+        <a class="btn" href="#contact">
+          Parlez-nous de votre défi composite
+          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" aria-hidden="true"><path d="M3 8.5h10M9 4.5l4 4-4 4" stroke="#F8FAFC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CONTACT (cœur du site) ======================= -->
+  <section class="section-dark" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <div class="eyebrow"></span><span>PARLONS-EN</span></div>
+        <h2>Parlez-nous de votre défi composite.</h2>
+        <p class="lead">Décrivez-nous l'incertitude que vous vivez avec vos fabrications ou applications composites. Nous vous répondrons pour voir comment nous pouvons vous aider.</p>
+        <div class="note-line">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#60A5FA" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="#60A5FA" stroke-width="1.6"/></svg>
+          Vos messages nous sont acheminés directement par courriel.
+        </div>
+        <div class="note-line">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z" stroke="#60A5FA" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          Protection anti-pourriel, vos données restent confidentielles.
+        </div>
+      </div>
+
+      <!-- Formulaire acheminé par courriel via Web3Forms (voir README). -->
+      <form class="card" method="POST" action="https://api.web3forms.com/submit" data-contact-form>
+        <input type="hidden" name="access_key" value="c72b4f75-f163-4b32-a7fa-ae4b1b05810e">
+        <input type="hidden" name="subject" value="Nouveau message — SenSys Aéro">
+        <input type="hidden" name="from_name" value="Formulaire SenSys Aéro">
+        <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off">
+        <div class="field-row">
+          <div class="field"><label for="nom">Nom</label><input id="nom" name="nom" type="text" placeholder="Votre nom" autocomplete="name" required></div>
+          <div class="field"><label for="courriel">Courriel</label><input id="courriel" name="courriel" type="email" placeholder="vous@organisation.com" autocomplete="email" required></div>
+        </div>
+        <div class="field"><label for="org">Organisation</label><input id="org" name="organisation" type="text" placeholder="Nom de votre organisation" autocomplete="organization"></div>
+        <div class="field">
+          <label for="defi">Décrivez l'incertitude ou le défi que vous rencontrez avec les composites</label>
+          <textarea id="defi" name="message" rows="5" placeholder="Parlez-nous de votre structure, de votre application et de ce qui vous préoccupe…" required></textarea>
+        </div>
+        <button class="btn btn--block" type="submit" style="margin-top:24px;">Envoyer mon message</button>
+        <p class="form-msg" data-form-msg role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="brand" href="index.html">
+            <img src="Icon.png" alt="SenSys Aéro" class="brand__logo">
+            <span class="brand__name">SenSys<b> Aéro</b></span>
+          </a>
+          <p>Experts en matériaux composites. Québec, Canada.</p>
+        </div>
+        <div class="footer-col"><h4>NAVIGATION</h4><a href="apropos.html">À propos</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>CONTACT</h4><a href="mailto:info@sensysaero.com">info@sensysaero.com</a><span style="font-size:14px;color:var(--text-mut);">Région de Québec, QC</span></div>
+        <div class="footer-col">
+          <h4>LANGUES</h4>
+          <p class="lang" style="margin-top:8px;"><b>FR</b> <span class="off">/ EN (bientôt)</span></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 SenSys Aéro. Tous droits réservés.</span>
+        <span class="footer-legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
